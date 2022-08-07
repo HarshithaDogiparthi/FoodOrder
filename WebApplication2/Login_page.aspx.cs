@@ -29,6 +29,7 @@ namespace WebApplication2
                 if (dr.Read())
                 {
                     Response.Write("<script>alert('Login Success')</script>");
+                    Response.Redirect("Index.aspx",false);
                 }
                 else
                 {
@@ -43,7 +44,7 @@ namespace WebApplication2
         }
         protected void btnSignUp_Click(object sender, EventArgs e)
         {
-            Response.Redirect("WebForm1.aspx");
+            Response.Redirect("SignUp.aspx");
         }
     }
 }
